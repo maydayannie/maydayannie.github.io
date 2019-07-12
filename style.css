@@ -61,18 +61,17 @@ body {
 
 .bannerimg{
     float: none;
-    width: 15%;
+    width: 12%;
     border-radius:50%; 
     position: relative;
-    
+    padding-bottom: 20px;
 }
 
 .jumbotron{
     margin-top: 10px;
-    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+    background-image: url("./top.png");
     background-size: cover;
     background-position: center center;
-    opacity: 0.65;
     color: white;
     text-align: center;
 }
@@ -87,7 +86,9 @@ body {
    width: 130pt;
 }
 
- /*position: relative;
+ /*
+https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg
+position: relative;
     left: 50%;
     top: 50%;
     opacity: 0.55;
@@ -130,3 +131,5 @@ h2{
 	background: WhiteSmoke;
     padding: 70px 0 80px;
 }
+
+
