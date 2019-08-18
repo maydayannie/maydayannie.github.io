@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+<head>
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,6 +14,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
     
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+   
+    
 <style>   
     .intro{
         float: right;
@@ -23,10 +35,24 @@
 	width: 50%;
 	vertical-align: middle;
 	padding-left: 10px;
-}
-    
-    
+}    
 </style>
+    
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#imgmap").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+});
+</script>    
+</head> 
     
 <body>
     
@@ -43,7 +69,7 @@
     <div class="jumbotron">
         <img class="bannerimg" src="./myphoto.jpg">
       <h2 class="">石丞君</h2>
-      <p class="lead">在思考與行動中創造價值。換位思考。專注力</p>
+      <p class="lead">在思考與行動中創造價值。換位思考</p>
       <p>mayday60124@gmail.com 。 0909608057 。 New Taipei City, Taiwan</p>
     </div>
     </div>
@@ -324,7 +350,26 @@
                 </a>
               </div>
             </div>
-          </li>          
+          </li>  
+            
+          <li class="media my-4">
+            <div class="media-body">
+               <h4 class="mt-0 mb-1">心智圖</h4>
+                  <ul>              
+                    說明：
+                    <p>利用心智圖網狀脈絡的結構，繪製能與使用者更有效討論溝通的系統架構圖</p>
+
+                    
+                  </ul> 
+            </div>
+             
+            <div class="ml-4 mr-3">
+                <a id="imgmap" href="./image/mindmap.png" title="心智圖-線上場地租借系統" >
+	               <img src="./image/mindmap_s.png" class="ml-4 mr-3 imgsize2" alt="" />
+                </a>
+            </div>          
+          </li>  
+            
         </ul>
     </div>
 
